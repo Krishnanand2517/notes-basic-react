@@ -10,6 +10,9 @@
     "build:ui": "rm -rf build && cd ../../part2 && npm run build && cp -r build ../part3/node-basics",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
+  "engines": {
+    "node": ">=14.20.1"
+  },
   "author": "Krishnanand Yadav",
   "license": "ISC",
   "dependencies": {
